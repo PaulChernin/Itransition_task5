@@ -8,7 +8,7 @@ type SeedInputProps = {
 
 const SeedInput = ({ value, setValue }: SeedInputProps) => {
     const onChange = (value: number | null) => {
-        if (value) {
+        if (value !== null) {
             setValue(value)
         }
     }
