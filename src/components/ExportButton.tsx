@@ -8,7 +8,12 @@ type ExportButtonProps = {
 
 const ExportButton = ({ people }: ExportButtonProps) => {
     return <>
-        <Button onClick={() => exportCsv(people)}>Export CSV</Button>
+        <Button 
+            onClick={() => exportCsv(people)}
+            style={{marginBottom: 16 }}
+        >
+            Export CSV
+        </Button>
     </>
 }
 

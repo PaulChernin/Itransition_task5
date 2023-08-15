@@ -37,7 +37,7 @@ function App() {
     }
 
     return (
-        <>
+        <div style={{ padding: 24 }}>
             <GenerationControls
                 params={params}
                 setParams={setParams}
@@ -47,7 +47,7 @@ function App() {
                 people={people}
                 add={add}
             />
-        </>
+        </div>
     )
 }
 

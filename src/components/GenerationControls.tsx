@@ -10,8 +10,8 @@ type ControlsProps = {
 }
 
 const GenerationControls = ({ params, setParams }: ControlsProps) => {
-    return <Form labelCol={{ span: 4 }}>
-        <Form.Item label='Locale: '>
+    return <Form labelAlign="left" labelCol={{span: 4}}>
+        <Form.Item label='Locale:'>
             <LocaleSelect
                 value={params.locale}
                 setValue={value => setParams({ ...params, locale: value })}
